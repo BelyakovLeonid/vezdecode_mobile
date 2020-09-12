@@ -2,8 +2,7 @@ package com.belyakov.vezdecode.presentation.setup
 
 import android.content.Context
 import android.text.Editable
-import android.text.InputType.TYPE_CLASS_NUMBER
-import android.text.InputType.TYPE_CLASS_TEXT
+import android.text.InputType.*
 import android.text.TextWatcher
 import android.util.AttributeSet
 import android.view.View
@@ -27,8 +26,11 @@ class SetupFieldView @JvmOverloads constructor(
             editText.hint = it.getString(R.styleable.SetupFieldView_hint)
             title.text = it.getString(R.styleable.SetupFieldView_title)
             when (it.getInt(R.styleable.SetupFieldView_inputType, 0)) {
-                0 -> editText.inputType = TYPE_CLASS_TEXT
                 1 -> editText.inputType = TYPE_CLASS_NUMBER
+                0 -> {
+                    editText.inputType = TYPE_TEXT_FLAG_MULTI_LINE
+                    editText.isSingleLine = false
+                }
             }
         }
         editText.addTextChangedListener(object : TextWatcher {
