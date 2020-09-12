@@ -5,6 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.belyakov.vezdecode.data.DonateRepository
+import java.lang.Exception
 import javax.inject.Inject
 
 class SetupTargetViewModel @Inject constructor(
@@ -41,7 +42,12 @@ class SetupTargetViewModel @Inject constructor(
 
     fun setDonateSum(sum: String?) {
         donateSum = sum
-        repository.setDonateSum(sum?.toLong())
+        val sumLong = try {
+            sum?.toLong()
+        } catch (e: Exception){
+            0
+        }
+        repository.setDonateSum(sumLong)
         _editIsComplete.value = isComplete
     }
 
