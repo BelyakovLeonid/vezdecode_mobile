@@ -7,6 +7,7 @@
         <item name="android:windowBackground">@color/colorWhite</item>
         <item name="materialButtonStyle">@style/ButtonStyle</item>
         <item name="chipStyle">@style/ChipStyle</item>
+        <item name="alertDialogStyle">@style/AlertDialog</item>
     </style>
 
     <style name="ChipStyle" parent="Widget.MaterialComponents.Chip.Action">
@@ -16,6 +17,18 @@
         <item name="chipStrokeColor">@color/colorGrayChips</item>
         <item name="chipStrokeWidth">1dp</item>
         <item name="chipBackgroundColor">@color/colorWhite</item>
+    </style>
+
+    <style name="AlertDialog" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textColorPrimary">@color/colorBlack</item>
+        <item name="android:textColorSecondary">@color/colorBlack</item>
+        <item name="buttonBarPositiveButtonStyle">@style/AlertButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/AlertButton</item>
+    </style>
+
+    <style name="AlertButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/colorGray</item>
     </style>
 
     <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">

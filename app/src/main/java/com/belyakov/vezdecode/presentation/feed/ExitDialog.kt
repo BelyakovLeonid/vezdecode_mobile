@@ -1,6 +1,6 @@
 package com.belyakov.vezdecode.presentation.feed
 
-import android.app.AlertDialog
+import androidx.appcompat.app.AlertDialog
 import android.app.Dialog
 import android.os.Bundle
 import android.view.WindowManager
@@ -26,7 +26,7 @@ class ExitDialog : DialogFragment() {
     }
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        return AlertDialog.Builder(context)
+        return AlertDialog.Builder(requireContext(), R.style.AlertDialog)
             .setMessage(R.string.new_donate)
             .setNegativeButton(R.string.no) { _, _ -> dismiss() }
             .setPositiveButton(R.string.yes) { _, _ ->
