@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/d_progress_green_empty" />
+
+    <item android:id="@android:id/progress">
+        <scale
+            android:drawable="@drawable/d_progress_green_current"
+            android:scaleWidth="100%" />
+    </item>
+</layer-list>

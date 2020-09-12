@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4986CC</color>
+    <color name="colorPrimaryDisabled">#604986CC</color>
+    <color name="colorPrimaryLight">#904986CC</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#818C99</color>
+    <color name="colorGraySecondary">#6D7885</color>
+    <color name="colorGrayLight">#D7D8D9</color>
+    <color name="colorGrayUltraLight">#F2F3F5</color>
+    <color name="colorGrayTransparent">#1F000000</color>
+    <color name="colorGrayChips">#99A2AD</color>
+    <color name="colorFeedBackground">#EBEDF0</color>
+    <color name="colorTransparent">#00000000</color>
+
+    <color name="colorProgressGray">#4CB8C1CC</color>
+<!--    <color name="colorProgressGray">#B8C1CC</color>-->
+    <color name="colorProgressGreen">#4BB34B</color>
+    <color name="colorGreenDisabled">#604BB34B</color>
+
+
+</resources>

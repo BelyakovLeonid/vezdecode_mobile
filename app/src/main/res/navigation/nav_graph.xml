@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.belyakov.vezdecode.presentation.welcome.WelcomeFragment"
+        android:label="WelcomeFragment"
+        tools:layout="@layout/f_welcome">
+        <action
+            android:id="@+id/action_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.belyakov.vezdecode.presentation.start.StartFragment"
+        android:label="StartFragment"
+        tools:layout="@layout/f_start">
+        <action
+            android:id="@+id/action_to_regularSetupFragment"
+            app:destination="@id/setupFragment" />
+        <action
+            android:id="@+id/action_to_targetSetupFragment"
+            app:destination="@id/targetSetupFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/targetSetupFragment"
+        android:name="com.belyakov.vezdecode.presentation.setup.target.SetupTargetFragment"
+        android:label="TargetSetupFragment"
+        tools:layout="@layout/f_setup_target">
+        <action
+            android:id="@+id/action_to_setupExtraFragment"
+            app:destination="@id/setupExtraFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/setupFragment"
+        android:name="com.belyakov.vezdecode.presentation.setup.regular.RegularSetupFragment"
+        android:label="SetupFragment"
+        tools:layout="@layout/f_setup_regular">
+        <action
+            android:id="@+id/action_to_setupDetailsFragment"
+            app:destination="@id/setupDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/setupExtraFragment"
+        android:name="com.belyakov.vezdecode.presentation.setup_extra.SetupExtraFragment"
+        android:label="SetupExtraFragment"
+        tools:layout="@layout/f_setup_extra">
+        <action
+            android:id="@+id/action_setupExtraFragment_to_setupDetailsFragment"
+            app:destination="@id/setupDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/setupDetailsFragment"
+        android:name="com.belyakov.vezdecode.presentation.setup_details.SetupDetailsFragment"
+        android:label="SetupDetailsFragment"
+        tools:layout="@layout/f_setup_details">
+        <action
+            android:id="@+id/action_to_feedFragment"
+            app:destination="@id/feedFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out"
+            app:popUpTo="@id/welcomeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.belyakov.vezdecode.presentation.feed.FeedFragment"
+        android:label="FeedFragment"
+        tools:layout="@layout/f_feed">
+        <action
+            android:id="@+id/action_to_feedDetailsFragment"
+            app:destination="@id/feedDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/feedDetailsFragment"
+        android:name="com.belyakov.vezdecode.presentation.feed_details.FeedDetailsFragment"
+        android:label="FeedDetailsFragment"
+        tools:layout="@layout/f_feed_details" />
+</navigation>

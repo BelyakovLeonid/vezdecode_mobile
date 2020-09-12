@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Vezdecode</string>
+    <string name="donates">Пожертвования</string>
+    <string name="donate_empty_hint">У Вас пока нет сборов.\nНачните доброе дело.</string>
+    <string name="donate_create">Создать сбор</string>
+
+    <string name="donate_type">Тип сбора</string>
+    <string name="donate_target">Целевой сбор</string>
+    <string name="donate_target_subtitle">Когда есть определенная цель</string>
+    <string name="donate_regular">Регулярный сбор</string>
+    <string name="donate_regular_subtitle">Когда помощь нужна ежемесячно</string>
+
+    <string name="load_image">Загрузить обложку</string>
+    <string name="donate_name">Название сбора</string>
+    <string name="donate_target_sum_title">Сумма, ₽</string>
+    <string name="donate_regular_sum_title">Сумма в месяц, ₽</string>
+    <string name="donate_target_sum_subtitle">Сколько нужно собрать?</string>
+    <string name="donate_regular_sum_subtitle">Сколько нужно в месяц?</string>
+    <string name="donate_goal_title">Цель</string>
+    <string name="donate_target_goal_subtitle">Например, лечение человека</string>
+    <string name="donate_regular_goal_subtitle">Например, поддержка приюта</string>
+    <string name="donate_description_title">Описание</string>
+    <string name="donate_description_subtitle">На что пойдут деньги и как они кому-то помогут?</string>
+    <string name="donate_wallet_title">Куда получать деньги</string>
+    <string name="donate_wallet_subtitle">Счёт VK Pay · 1234</string>
+    <string name="donate_author">Автор</string>
+    <string name="donate_author_template">Автор %1$s</string>
+    <string name="donate_date_title">Дата окончания</string>
+    <string name="donate_date_subtitle">Выберите дату</string>
+    <string name="donate_expire_title">Сбор завершится</string>
+    <string name="expire_date">Когда собёрем сумму</string>
+    <string name="expire_sum">В определенную дату</string>
+    <string name="donate_extra">Дополнительно</string>
+
+    <string name="donate_monthly">Помощь нужна каждый месяц</string>
+
+    <string name="next">Далее</string>
+    <string name="download">Загрузить обложку</string>
+    <string name="dummy_toast">It\'s dummy!</string>
+    <string name="dot_divider">·</string>
+    <string name="help">Помочь</string>
+    <string name="visibility_everybody">Видно всем</string>
+    <string name="time_now">Сейчас</string>
+    <string name="theme">Тематика</string>
+    <string name="whatever">Еще что-нибудь</string>
+    <string name="feed">Новости</string>
+    <string name="interesting">Интересное</string>
+    <string name="currency_pattern">%1$s ₽</string>
+
+    <string name="fake_name">Павел Князев</string>
+    <string name="fake_name1">Матвей Правосудов</string>
+    <string name="fake_time">15 минут назад</string>
+    <string name="fake_text">Эта книга адресована всем, кто изучает русский язык. Но состоит она не из правил, упражнений и учебных текстов. Для этого созданы другие замечательные учебники. У этой книги совсем иная задача. Она поможет вам научиться не только разговаривать, но и размышлять по-русски.</string>
+    <string name="fake_like">65</string>
+    <string name="fake_share">4</string>
+    <string name="fake_watch">7,4K</string>
+
+    <string name="donate_first">Помогите первым</string>
+    <string name="donate_complete">%1$s собраны!</string>
+    <string name="donate_progress">Собрано %1$s из %2$s</string>
+
+    <string name="expire_progress_regular">Нужно собрать в %1$s</string>
+    <string name="expire_progress_target">Нужно собрать до %1$s</string>
+
+    <string name="author_name">Леонид Беляков</string>
+    <string name="new_donate">Вы уверены, что хотите создать новый сбор?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+</resources>
